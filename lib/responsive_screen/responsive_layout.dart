@@ -21,4 +21,3 @@ class ResponsiveLayout extends StatelessWidget {
     );
   }
 }
-// my code
