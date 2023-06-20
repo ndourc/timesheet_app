@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: MobileScreenLayout(),
+      home: const MobileScreenLayout(),
     );
   }
 }
