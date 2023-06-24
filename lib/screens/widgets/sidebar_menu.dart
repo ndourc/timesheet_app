@@ -6,7 +6,7 @@ const SideBar({Key? key}) : super(key: key);
 
 
   @override
-  _SideBarState createStateState() => _SideBarState();
+  _SideBarState createState() => _SideBarState();
 }
 
 class _SideBarState extends State<SideBar>{
@@ -32,7 +32,7 @@ class _SideBarState extends State<SideBar>{
               child: Text('Dashboard Side Menu Text',
                 style: TextStyle(
                   color: AppColor.accent,
-                  fontSize: 25,
+                  fontSize: 15,
                   fontWeight: FontWeight.bold
                 ),
                 ),
