@@ -18,15 +18,18 @@ class _HomePageState extends State<HomePage>{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Side navigation menu
-            Expanded(child: SideBar(
-
-            )),
+            Expanded(
+              child: SideBar(
+                
+              )
+            ),
             // Main body
             Expanded(
               flex: 4,
               child: Container(
 
-            )),
+              )
+            ),
           ],
         ),
       ),
