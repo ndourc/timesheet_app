@@ -18,7 +18,7 @@ class _HomePageState extends State<HomePage>{
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Side navigation menu
-            Expanded(
+            const Expanded(
               child: SideBar(
                 
               )
