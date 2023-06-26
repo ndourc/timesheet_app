@@ -32,17 +32,32 @@ class _SideBarState extends State<SideBar>{
             ),
             DrawerListTile(
               title: 'Dashboard',
-              icon: 'Icons.dashboard',
+              icon: Icons.dashboard,
               press: () {},
             ),
             DrawerListTile(
-              title: 'Dashboard',
-              icon: 'Icons.dashboard',
+              title: 'Client WorkSpace',
+              icon: Icons.workspaces_filled,//icon: Icon(Icons.place),
               press: () {},
             ),
             DrawerListTile(
-              title: 'Dashboard',
-              icon: 'Icons.dashboard',
+              title: 'Calendar',
+              icon: Icons.calendar_month,//icon: Icon(Icons.place),
+              press: () {},
+            ),
+            DrawerListTile(
+              title: 'Report',
+              icon: Icons.report_sharp,//icon: Icon(Icons.place),
+              press: () {},
+            ),
+            DrawerListTile(
+              title: 'Settings',
+              icon: Icons.settings,//icon: Icon(Icons.place),
+              press: () {},
+            ),
+            DrawerListTile(
+              title: 'Logout',
+              icon:Icons.logout,
               press: () {},
             ),
           ],
@@ -51,25 +66,43 @@ class _SideBarState extends State<SideBar>{
     );
   }
 }
+/*ListTile(
+    leading: Icon(
+        Icons.admin_panel_settings,
+      ),
+      title: Text('Admin Dashboard'),
+  ),
+  ListTile(
+    leading: Icon(
+        Icons.stacked_line_chart,
+      ), */
 
 class DrawerListTile extends StatelessWidget {
-  final String title, icon;
+  final String title;
+  final IconData icon;
+  final int color;
   final VoidCallback press;
 
-  const DrawerListTile({Key key,
-     this.title,
-     this.icon,
-     this.press});
+  const DrawerListTile({Key? key,
+     required this.title,
+     required this.icon,
+     required this.color,
+     required this.press
+     }
+    );
+
   @override
   Widget build(BuildContext context) {
     return  ListTile(
       onTap: press,
       leading: IconButton(
         onPressed: () {},
-        icon: const Icon(
-          Icons.login),
+        icon: Icon(icon,
+              color: Color(color),
+            ),
           ),
-          title: Text(title,
+          title: Text(
+            title,
           style: TextStyle(
             color: AppColor.someColour7,
         )
