@@ -22,42 +22,49 @@ class _SideBarState extends State<SideBar>{
           children: [
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              child: Text('Some Text',
+              child: Text('N D O U  R C',
                 style: TextStyle(
                   color: AppColor.someColour7,
                   fontSize: 15,
-                  fontWeight: FontWeight.bold
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Segoe UI Emoji',
                 ),
                 ),
             ),
             DrawerListTile(
               title: 'Dashboard',
               icon: Icons.dashboard,
+              color: 0x00000000,
               press: () {},
             ),
             DrawerListTile(
               title: 'Client WorkSpace',
               icon: Icons.workspaces_filled,//icon: Icon(Icons.place),
+              color: 0x00000000,
               press: () {},
             ),
             DrawerListTile(
               title: 'Calendar',
               icon: Icons.calendar_month,//icon: Icon(Icons.place),
+              color: 0x00000000,
               press: () {},
             ),
             DrawerListTile(
               title: 'Report',
               icon: Icons.report_sharp,//icon: Icon(Icons.place),
+              color: 0x00000000,
               press: () {},
             ),
             DrawerListTile(
               title: 'Settings',
               icon: Icons.settings,//icon: Icon(Icons.place),
+              color: 0x00000000,
               press: () {},
             ),
             DrawerListTile(
               title: 'Logout',
               icon:Icons.logout,
+              color: 0x00000000,
               press: () {},
             ),
           ],
@@ -98,13 +105,15 @@ class DrawerListTile extends StatelessWidget {
       leading: IconButton(
         onPressed: () {},
         icon: Icon(icon,
-              color: Color(color),
+              color: const Color(0xFFFF9000),
             ),
           ),
           title: Text(
             title,
           style: TextStyle(
             color: AppColor.someColour7,
+            fontWeight: FontWeight.bold,
+            fontFamily: 'Segoe UI Emoji',
         )
       ),
     );
