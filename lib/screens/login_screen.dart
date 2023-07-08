@@ -1,4 +1,3 @@
-import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:timesheet_manager_app/screens/signup_screen.dart';
 import 'package:timesheet_manager_app/utilities/colours.dart';

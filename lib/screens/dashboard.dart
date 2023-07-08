@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timesheet_manager_app/common/app_colours.dart';
 import 'widgets/header_widget.dart';
+import 'widgets/notification_card_widget.dart';
 
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -21,8 +22,26 @@ class _DashboardState extends State<Dashboard> {
       ),
       child: Column(
         children: [
-          HeaderWidget(
-            
+          HeaderWidget(),
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: Column(
+                        children: [
+                          NotificationCardWidget(),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Expanded(
+
+                    child: Container(),    
+                )
+              ],
+            )
           ),
         ],
       ),
