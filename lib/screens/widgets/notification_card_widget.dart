@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timesheet_manager_app/common/app_colours.dart';
+import 'package:timesheet_manager_app/screens/widgets/notification_card_sub_widgets.dart';
 
 class NotificationCardWidget extends StatelessWidget {
   const NotificationCardWidget({super.key});
@@ -30,7 +31,7 @@ class NotificationCardWidget extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.normal)
                       ),
-                    TextSpan(text: "Nomvula Nkomo",
+                    TextSpan(text: "Henry Ndou",
                     style: TextStyle(
                       fontWeight: FontWeight.bold
                   )     
@@ -41,16 +42,31 @@ class NotificationCardWidget extends StatelessWidget {
             const SizedBox(
                 height: 10,
               ),
-              Text("Today you have 9 new notifications. \nAlso, there are 3 applications from new clients. \n1. Antemoeba Histolytica. \n2. Protozoa. \n3. Fungi.",
+              Text("Today you have 9 new notifications.",
               style: TextStyle(
                 fontSize: 15,
                 fontStyle: FontStyle.italic,
                 color: AppColor.someColour5,
-                height: 1.5,
+                height: 2,
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              // Text('Read more',
+              // style: TextStyle(
+              //   fontSize: 15,
+              //   fontStyle: FontStyle.normal,
+              //   fontWeight: FontWeight.bold,
+              //   color: AppColor.someColour5,
+              //   decoration: TextDecoration.underline
+              // ),
+              // ),
+              NotificationCardSubWidgets(),
             ],
-          )
+          ),
+          Spacer(),
+          // Image.asset('assets/n')
         ],
       ),
     );

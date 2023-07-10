@@ -32,6 +32,7 @@ class _DashboardState extends State<Dashboard> {
                       child: Column(
                         children: [
                           NotificationCardWidget(),
+                          
                         ],
                       ),
                     ),

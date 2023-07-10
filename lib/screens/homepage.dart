@@ -16,12 +16,12 @@ class _HomePageState extends State<HomePage>{
   Widget build(BuildContext context){
     return Scaffold(
       backgroundColor: AppColor.someColour6,
-      body: SafeArea(
+      body: const SafeArea(
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             //Side navigation menu
-            const Expanded(
+            Expanded(
               child: SideBar(
                 
               )

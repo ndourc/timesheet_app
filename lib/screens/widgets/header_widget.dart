@@ -17,20 +17,22 @@ class _HeaderWidgetState extends State<HeaderWidget> {
       margin: const EdgeInsets.all(10),
       child: Row(
           children: [
-            const Text('Dashboard',
+             Text('Dashboard',
             style: TextStyle(
               fontSize: 20,
               fontFamily: 'Segoe UI Emoji',
-              fontWeight: FontWeight.bold,        
+              fontWeight: FontWeight.bold,
+              color: AppColor.mainAccent,        
             ),
           ),
           const Spacer(),
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              navigationIcon(icon: Icons.search),
-              navigationIcon(icon: Icons.send),
-              navigationIcon(icon: Icons.notifications_none_rounded)
+              // ADD - Dropdown button style - filter by year, month or even week
+              // navigationIcon(icon: Icons.search),
+              // navigationIcon(icon: Icons.send),
+              navigationIcon(icon: Icons.notifications_none_rounded),
             ],
           )
         ],

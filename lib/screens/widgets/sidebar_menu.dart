@@ -69,6 +69,7 @@ class _SideBarState extends State<SideBar>{
             ),
           ],
         ),
+        // Image.asset('<path>')
       ),
     );
   }
