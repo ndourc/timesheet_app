@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:timesheet_manager_app/utilities/colours.dart';
 
+import '../../common/app_colours.dart';
+
 var myAppBar = AppBar(
   backgroundColor: greenColor,
 );
@@ -50,3 +52,10 @@ var myDrawer = Drawer(
             ],
           ),
         );
+
+Widget navigationIcon({icon}){
+  return Icon(
+    icon,
+    color: AppColor.mainAccent,
+    );
+  }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:timesheet_manager_app/constants.dart';
+import 'package:timesheet_manager_app/screens/widgets/constants.dart';
 import 'package:timesheet_manager_app/utilities/colours.dart';
 import 'package:timesheet_manager_app/utilities/my_box.dart';
 import 'package:timesheet_manager_app/utilities/my_tile.dart';

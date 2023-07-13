@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:timesheet_manager_app/constants.dart';
+import 'package:timesheet_manager_app/screens/widgets/constants.dart';
 
 class WebScreenLayout extends StatefulWidget {
   const WebScreenLayout({Key? key}) : super(key: key);

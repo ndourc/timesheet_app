@@ -17,6 +17,11 @@ class _EmployeeDetailsWidgetState extends State<EmployeeDetailsWidget> {
         borderRadius: BorderRadius.circular(20)
       ),
       padding: EdgeInsets.all(20),
+      /*      decoration: BoxDecoration(
+        color: AppColor.someColour3,
+        borderRadius: BorderRadius.circular(20)
+      ),
+      padding: EdgeInsets.all(20),*/
       child: Column(
         children: [
           Row(

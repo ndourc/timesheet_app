@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:timesheet_manager_app/common/app_colours.dart';
+
+import 'constants.dart';
 //import 'package:timesheet_manager_app/screens/dashboard.dart';
 
 class HeaderWidget extends StatefulWidget {
@@ -39,12 +41,4 @@ class _HeaderWidgetState extends State<HeaderWidget> {
       ),
     ); 
   }
-
-Widget navigationIcon({icon}){
-  return Icon(
-    icon,
-    color: AppColor.mainAccent,
-    );
-  }
 }
-

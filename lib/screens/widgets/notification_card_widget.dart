@@ -12,11 +12,12 @@ class _NotificationCardWidgetState extends State<NotificationCardWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
+      margin: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         color: AppColor.someColour3,
         borderRadius: BorderRadius.circular(20)
       ),
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.all(7),
       child: Row(
         children: [
 
@@ -65,30 +66,102 @@ child: Row(
                ]
               ),
              ),
-             
+            // Spacer(),
+            // Container(     
+            // ),
             const SizedBox(
                 height: 10,
               ),
-              Text("Today you have 9 new notifications.",
-              style: TextStyle(
-                fontSize: 15,
-                fontStyle: FontStyle.italic,
-                color: AppColor.someColour5,
-                height: 2,
-                ),
+              Row(
+                children: [
+                  CircleAvatar(
+                    radius: 35,
+                    backgroundColor: AppColor.someColour7,
+                    child: Icon(Icons.person,
+                    size: 35,
+                    color: AppColor.mainColor,
+                    ),
+                  ),
+                  const SizedBox(width: 25),
+                  Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: AppColor.mainAccent,
+                          fontWeight: FontWeight.bold
+                  ),
+                      children: [
+                      TextSpan(text: 'Role',
+                         style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 10,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                        TextSpan(text: '\nMobile App Dev',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                      ]
+                    ),
+                    ),
+                    const SizedBox(width: 20),
+                    Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: AppColor.mainAccent,
+                          fontWeight: FontWeight.bold
+                  ),
+                      children: [
+                      TextSpan(text: 'Phone',
+                         style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 10,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                        TextSpan(text: '\n+263 71 256 4412',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                      ]
+                    ),
+                    ),
+                    const SizedBox(width: 20),
+                    Text.rich(
+                      TextSpan(
+                        style: TextStyle(
+                          fontSize: 17,
+                          color: AppColor.mainAccent,
+                          fontWeight: FontWeight.bold
+                  ),
+                      children: [
+                      TextSpan(text: 'Email',
+                         style: TextStyle(
+                          fontWeight: FontWeight.normal,
+                          fontSize: 10,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                        TextSpan(text: '\nndou.research@gmail.com',
+                         style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          color: AppColor.mainColor,
+                        ),
+                        ),
+                      ]
+                    ),
+                    ),
+                ],
               ),
-              // const SizedBox(
-              //   height: 10,
-              // ),
-              // Text('Read more',
-              // style: TextStyle(
-              //   fontSize: 15,
-              //   fontStyle: FontStyle.normal,
-              //   fontWeight: FontWeight.bold,
-              //   color: AppColor.someColour5,
-              //   decoration: TextDecoration.underline
-              // ),
-              // ),
               const SizedBox(height: 10),
               Row(
                 children: [
@@ -179,7 +252,6 @@ child: Row(
                     size: 20,
                     ),
                     const SizedBox(width: 8),
-
                     Text.rich(
                       TextSpan(
                         style: TextStyle(
@@ -207,6 +279,31 @@ child: Row(
                     ),
                   ],
                  ),
+                 ),
+                 const SizedBox(width: 15),
+                 Container(
+                    decoration: BoxDecoration(
+                      color: AppColor.someColour7,
+                      borderRadius: BorderRadius.circular(100),
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 10,
+                    horizontal: 20,
+                  ),
+                  child: Row(
+                    children: [
+                      Text('Download \nDetails',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: AppColor.mainColor,
+                     ),
+                    ),
+                    const SizedBox(width: 5),
+                    Icon(Icons.arrow_drop_down,
+                      color: AppColor.mainColor,
+                      ),
+                  ],
+                  )
                  ),
                 ],
               ),
